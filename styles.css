@@ -7,7 +7,7 @@
     font-family: 'Rubik', sans-serif;
 }
 
-div.nav-bar {
+div.navbar {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -21,24 +21,24 @@ div.logo {
 }
 
 
-.navbar-links ul {
+.navbarlinks ul {
     margin: 0;
     padding: 10px;
     display: flex;
 }
 
-.navbar-links li {
+.navbarlinks li {
     list-style: none;
 }
 
-.navbar-links li a {
+.navbarlinks li a {
     text-decoration: none;
     color: #88949B;
     padding: .5rem 1rem;
     display: block;
 }
 
-.navbar-links li:hover {
+.navbarlinks li:hover {
     color: #304353;
     background: #fff;
 }
@@ -46,7 +46,7 @@ div.logo {
 
 
 /*  */
-.toggle-button {
+.togglebutton {
     position: absolute;
     top: .75rem;
     right: 1rem;
@@ -57,7 +57,7 @@ div.logo {
     height: 21px;
 }
 
-.toggle-button .bar {
+.togglebutton .bar {
     height: 3px;
     width: 100%;
     background: #fff;
@@ -382,9 +382,10 @@ div.footer h6 {
 @media screen and (max-width:768px) {
     /* The Navigation section */
 
-    div.nav-bar {
+    div.navbar {
         flex-direction: column;
         align-items: flex-start;
+        transition: all ease-in-out 200ms;
     }
 
     div.logo {
@@ -392,31 +393,31 @@ div.footer h6 {
         color: #bcc3c7;
     }
 
-    .toggle-button {
+    .togglebutton {
         display: flex;
         margin-top: 5px;
     }
 
-    .navbar-links {
+    .navbarlinks {
         display: none;
         width: 100%;
     }
 
-    .navbar-links ul {
+    .navbarlinks ul {
         width: 100%;
         flex-direction: column;
         background: #2b3c4b;
     }
 
-    .navbar-links li a {
+    .navbarlinks li a {
         padding: .5rem 1rem;
     }
 
-    .navbar-links li {
+    .navbarlinks li {
         text-align: center;
     }
 
-    .navbar-links.active {
+    .navbarlinks.active {
         display: flex;
     }
 
@@ -551,7 +552,7 @@ div.footer h6 {
 @media screen and (max-width:425px) {
     /* The Navigation section */
 
-    div.nav-bar {
+    div.navbar {
         display: flex;
         justify-content: space-between;
         padding: 1rem;
@@ -562,7 +563,7 @@ div.footer h6 {
         font-size: 1.5rem;
     }
 
-    .toggle-button {
+    .togglebutton {
         margin-top: 15px;
     }
 
@@ -630,7 +631,7 @@ div.footer h6 {
 @media screen and (max-width:375px) {
     /* The Navigation section */
 
-    div.nav-bar {
+    div.navbar {
         display: flex;
         justify-content: space-between;
         padding: 1rem;
@@ -703,7 +704,7 @@ div.footer h6 {
 @media screen and (max-width:320px) {
     /* The Navigation section */
 
-    div.nav-bar {
+    div.navbar {
         display: flex;
         justify-content: space-between;
         padding: 1rem;
