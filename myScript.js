@@ -3,4 +3,5 @@ const toggleButton = document.querySelector(".togglebutton"); //Selects the clas
 
 
 const clickfunction= toggleButton.addEventlistener('click', event => {
- toggleButton.innerHTML = `I was clicked ${event.details} times `)
+ toggleButton.innerHTML = `I was clicked ${event.details} times `
+})
